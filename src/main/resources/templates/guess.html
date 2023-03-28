@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div class="blog-header-container">
+  <h1 th:if="${answer == n}">
+    you chose wisely
+  </h1>
+  <h1 th:if="${answer != n}">
+    you chose unwisely
+  </h1>
+  <p>You guessed <span th:text="${n}">(guess)</span></p>
+  <p>The answer was <span th:text="${answer}">(answer)</span></p>
+</div>
+</body>
+</html>
