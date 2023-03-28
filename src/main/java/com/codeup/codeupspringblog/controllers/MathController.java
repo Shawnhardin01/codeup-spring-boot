@@ -18,25 +18,25 @@ class MathController {
 
     @GetMapping("/subtract/{x}/from/{y}")
     @ResponseBody
-    public String subtract(@PathVariable int x,@PathVariable int y) {
-        int difference = y - x;
-        return y + "-" + x + "=" + difference;
+    public String subtract(@PathVariable int num1,@PathVariable int num2) {
+        int difference = num1 - num2;
+        return num2 + "-" + num1 + "=" + difference;
     }
 
 
     @GetMapping("/multiply/{x}/and/{y}")
     @ResponseBody
-    public String multiply(@PathVariable int x,@PathVariable int y) {
-        int product = x * y;
-        return x + "*" + y + "=" + product;
+    public String multiply(@PathVariable int num1,@PathVariable int  num2) {
+        int product =num1 *  num2;
+        return num1+ "*" +  num2 + "=" + product;
     }
 
 
     @GetMapping("/divide/{x}/and/{y}")
     @ResponseBody
-    public String divide(@PathVariable int x,@PathVariable int y) {
-        int quotient = x / y;
+    public String divide(@PathVariable int num1,@PathVariable int  num2) {
+        int quotient = num1 /  num2;
 
-        return x + "÷" + y + "=" + quotient;
+        return num1 + "÷" +  num2 + "=" + quotient;
     }
 }
