@@ -15,19 +15,19 @@ public class PostController {
     @GetMapping("/posts")
     @ResponseBody
     public String postsPage() {
-        return "posts index page";
+        return "posts index";
     }
 
     @GetMapping("/posts/{id}")
     @ResponseBody
     public String individualPost(@PathVariable int id) {
-        return "view an individual post from id: " + id;
+        return "view an post from id: " + id;
     }
 
     @GetMapping("/posts/create")
     @ResponseBody
     public String createPostPage() {
-        return "view the form for creating a post";
+        return "view form for creating a post";
     }
     @Id
         @GeneratedValue(strategy = GenerationType.IDENTITY)
