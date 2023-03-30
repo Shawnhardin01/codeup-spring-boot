@@ -34,7 +34,7 @@ public class PostController {
     @GetMapping("/posts/{id}")
     @ResponseBody
     public String individualPost(@PathVariable int id) {
-        return "view a post from id: " + id;
+        return "view a post from id " + id;
     }
 
     @GetMapping("/posts/create")
@@ -56,7 +56,7 @@ public class PostController {
     @PostMapping("/posts/create")
     @ResponseBody
     public String postCreatePostPage() {
-        return "create a new post";
+        return "create a post";
     }
 
     public void setId(Long id) {
