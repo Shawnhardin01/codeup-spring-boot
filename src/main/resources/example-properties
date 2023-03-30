@@ -1,4 +1,7 @@
-
-Server: studentdb.fulgentcorp.com
-Username: ymir_shawn
-Password: CvUcWPDdN5EHuc8
+spring.datasource.url=jdbc:mysql://localhost/ymir_shawn?createDatabaseIfNotExist=true&useSSL=false&serverTimezone=UTC&allowPublicKeyRetrieval=true
+spring.datasource.username=ymir_shawn
+spring.datasource.password=CvUcWPDdN5EHuc8
+spring.jpa.hibernate.ddl-auto=update
+spring.jpa.show-sql=true
+spring.jpa.properties.hibernate.dialect=org.hibernate.dialect.MySQL8Dialect
+spring.datasource.hikari.maximum-pool-size=4

@@ -1,5 +1,8 @@
 package com.codeup.codeupspringblog.controllers;
 
+import com.codeup.codeupspringblog.repositories.PostRepository;
+import com.codeup.codeupspringblog.repositories.UserRepository;
+import lombok.AllArgsConstructor;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -8,8 +11,18 @@ import org.springframework.web.bind.annotation.ResponseBody;
 import jakarta.persistence.*;
 
 @Entity
+@AllArgsConstructor
 @Controller
 public class PostController {
+
+
+    public PostController(PostRepository postDoa, UserRepository userDoa) {
+
+    }
+
+    public PostController() {
+
+    }
 
 
     @GetMapping("/posts")
