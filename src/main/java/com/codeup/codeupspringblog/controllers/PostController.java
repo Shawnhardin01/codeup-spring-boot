@@ -15,11 +15,8 @@ import jakarta.persistence.*;
 @Controller
 public class PostController {
 
-
     public PostController(PostRepository postDoa, UserRepository userDoa) {
-
     }
-
     public PostController() {
 
     }
@@ -51,7 +48,6 @@ public class PostController {
 
         @Column(nullable = false)
         private String description;
-
 
     @PostMapping("/posts/create")
     @ResponseBody
