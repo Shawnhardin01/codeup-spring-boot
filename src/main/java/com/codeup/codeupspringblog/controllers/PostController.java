@@ -34,7 +34,7 @@ public class PostController {
     @GetMapping("/posts/{id}")
     @ResponseBody
     public String individualPost(@PathVariable int id) {
-        return "view an post from id: " + id;
+        return "view a post from id: " + id;
     }
 
     @GetMapping("/posts/create")
