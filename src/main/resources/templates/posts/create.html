@@ -5,6 +5,8 @@
     <title>Title</title>
 </head>
 <body>
+<header th:replace="/partials :: header"></header>
+<nav class="pb-3" th:replace="/partials :: navbar" ></nav>
 <h1>Post a Post</h1>
 <form method="post" action="/posts/create" th:object="${post}">
     <label for="title">Title:</label>
@@ -14,4 +16,5 @@
     <button class="btn footer-bg" type="submit">Submit </button>
 </form>
 </body>
+<footer th:replace="partials ::footer"></footer>
 </html>

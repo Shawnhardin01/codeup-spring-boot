@@ -1,18 +1,16 @@
-//package com.codeup.codeupspringblog.controllers;
+//package com.codeup.controllers;
 //
 //import com.codeup.codeupspringblog.services.EmailService;
 //import org.springframework.stereotype.Controller;
 //
-//public class AdController {
+//public class emailcontroller{
 //    @Controller
-//    class adController {
-//        // ...
+//    class emailcontroller {
+//
 //        private final EmailService emailService;
 //
-//        public adController(EmailService emailService) {
+//        public emailcontroller(EmailService emailService) {
 //            this.emailService = emailService;
 //        }
-//        // ...
 //    }
-//
 //}

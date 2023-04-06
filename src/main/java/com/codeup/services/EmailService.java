@@ -1,11 +1,5 @@
-package com.codeup.codeupspringblog.services;
+package com.codeup.services;
 
-import lombok.AllArgsConstructor;
-import lombok.Getter;
-import lombok.Setter;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.beans.factory.annotation.Value;
-import org.springframework.stereotype.Service;
 //@AllArgsConstructor
 //@Getter
 //@Setter

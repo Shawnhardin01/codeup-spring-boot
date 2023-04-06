@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+  <title>Edit Posts</title>
+</head>
+<body class="d-flex flex-column">
+<header th:replace="/partials :: header"></header>
+<nav class="pb-3" th:replace="/partials :: navbar" ></nav>
+<div class="container d-flex flex-grow-1 justify-content-center align-items-center">
+  <div class="card shadow edit-card" style="">
+    <div class="card-body d-flex flex-column">
+
+      <div class="alert alert-danger" th:if="${errMsg}">
+       Error
+      </div>
+
+      <h1 class="">
+      deleted
+      </h1>
+
+    </div>
+  </div>
+</div>
+</body>
+<footer th:replace="partials ::footer"></footer>
+</html>
