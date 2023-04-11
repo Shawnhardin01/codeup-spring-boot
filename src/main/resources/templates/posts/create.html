@@ -5,16 +5,16 @@
     <title>Title</title>
 </head>
 <body>
-<header th:replace="/partials :: header"></header>
-<nav class="pb-3" th:replace="/partials :: navbar" ></nav>
-<h1>Post a Post</h1>
+<!--<header th:replace="/partials :: header"></header>-->
+<!--<nav class="pb-3" th:replace="/partials :: navbar" ></nav>-->
+<h1>create a Post</h1>
 <form method="post" action="/posts/create" th:object="${post}">
     <label for="title">Title:</label>
     <input type="text" name="title" id="title">
-    <label for="body">Post:</label><br>
+    <label for="body">Post name :</label><br>
     <textarea name="body" id="body" cols="30" rows="10"></textarea>
-    <button class="btn footer-bg" type="submit">Submit </button>
+    <button class="btn footer-bg" type="submit">enter </button>
 </form>
 </body>
-<footer th:replace="partials ::footer"></footer>
+<!--<footer th:replace="partials ::footer"></footer>-->
 </html>

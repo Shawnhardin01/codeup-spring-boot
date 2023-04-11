@@ -50,7 +50,7 @@ public class PostController {
     public String deletePost(@PathVariable long postId, Model model) {
         Post post = postsDao.findById(postId).get();
         model.addAttribute("post", post);
-        return "posts/delete";
+        return "posts/Delete";
     }
 
     @PostMapping("/{postId}/delete")
@@ -63,14 +63,14 @@ public class PostController {
     @GetMapping
     public String allPosts(Model model) {
         model.addAttribute("posts", postsDao.findAll());
-        return "posts/index";
+        return "user/index";
     }
 
     @GetMapping("/{postId}")
     public String viewPost(@PathVariable long postId, Model model) {
         Post testPost = postsDao.findById(postId).get();
         model.addAttribute("post", testPost);
-        return "posts/show";
+        return "posts/Show";
     }
 
 }
