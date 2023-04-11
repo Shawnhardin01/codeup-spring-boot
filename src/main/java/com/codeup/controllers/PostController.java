@@ -72,5 +72,18 @@ public class PostController {
         model.addAttribute("post", testPost);
         return "posts/Show";
     }
-
+//    @GetMapping("post/{id}/edit")
+//    public String showEditPostForm(@PathVariable long id, Model model) {
+//        Post testpost = postDao.findById(id).get();
+//        model.addAttribute("post", testpost);
+//        return "posts/edit";
+//    }
+//    @PostMapping("post/{id}/edit")
+//    public String editPost(@PathVariable long id, @ModelAttribute Post post) {
+//        Post Post = postDao.findById(id).get();
+//        post.setId(post.getId());
+//        post.setUser(Post.getUser());
+//        postDao.save(post);
+//        return "redirect:/posts/{id}";
+//    }
 }
