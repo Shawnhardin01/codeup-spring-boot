@@ -1,24 +1,32 @@
-//package com.codeup.codeupspringblog.services;
+//public class UserWithRoles extends User implements UserDetails {
 //
-//import com.codeup.codeupspringblog.repositories.UserRepository;
-//import com.codeup.codeupspringblog.repositories.models.User;
-//import org.springframework.stereotype.Service;
-//
-//@Service
-//public class UserDetailsLoader implements UserDetailsService {
-//    private final UserRepository users;
-//
-//    public UserDetailsLoader(UserRepository users) {
-//        this.users = users;
+//    public UserWithRoles(User user) {
+//        super(user);  // Call the copy constructor defined in User
 //    }
 //
 //    @Override
-//    public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
-//        User user = users.findByUsername(username);
-//        if (user == null) {
-//            throw new UsernameNotFoundException("No user found for " + username);
-//        }
-//
-//        return new UserWithRoles(user);
+//    public Collection<? extends GrantedAuthority> getAuthorities() {
+//        String roles = ""; // Since we're not using the authorization part of the component
+//        return AuthorityUtils.commaSeparatedStringToAuthorityList(roles);
 //    }
-//}
+//
+//    @Override
+//    public boolean isAccountNonExpired() {
+//        return true;
+//    }
+//
+//    @Override
+//    public boolean isAccountNonLocked() {
+//        return true;
+//    }
+//
+//    @Override
+//    public boolean isCredentialsNonExpired() {
+//        return true;
+//    }
+//
+//    @Override
+//    public boolean isEnabled() {
+//        return true;
+//    }
+////}
